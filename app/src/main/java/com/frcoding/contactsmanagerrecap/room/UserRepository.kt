@@ -3,25 +3,25 @@ package com.frcoding.contactsmanagerrecap.room
 import androidx.lifecycle.LiveData
 
 class UserRepository(
-    private val userDAO: UserDAO
+    private val db: UserDatabase
 ) {
 
-    val users = userDAO.getAllUsers()
+    val users = db.getUserDao().getAllUsers()
 
     suspend fun insert(user: User){
-        userDAO.insert(user)
+        db.getUserDao().insert(user)
     }
 
     suspend fun update(user: User){
-        userDAO.update(user)
+        db.getUserDao().update(user)
     }
 
     suspend fun delete(user: User){
-        userDAO.delete(user)
+        db.getUserDao().delete(user)
     }
 
     suspend fun deleteAll(){
-        userDAO.deleteAll()
+        db.getUserDao().deleteAll()
     }
 
 

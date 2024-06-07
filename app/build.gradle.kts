@@ -70,4 +70,10 @@ dependencies {
     implementation("androidx.room:room-ktx:$room_version")
     //coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+
+    val kodein_version = "6.5.0"
+
+    // Kodein
+    implementation ("org.kodein.di:kodein-di-generic-jvm:$kodein_version")
+    implementation ("org.kodein.di:kodein-di-framework-android-x:$kodein_version")
 }
