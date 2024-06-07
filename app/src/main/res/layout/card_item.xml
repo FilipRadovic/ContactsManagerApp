@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#CCFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
 
         <LinearLayout
+            android:id="@+id/listItemLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -16,8 +19,7 @@
                 android:id="@+id/tv_userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
                 android:text="User name"
                 android:textSize="20sp"/>
 
@@ -25,8 +27,7 @@
                 android:id="@+id/tv_userEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="6dp"
+                android:layout_margin="8dp"
                 android:text="User email"
                 android:textSize="20sp"/>
 
